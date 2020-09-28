@@ -1,0 +1,27 @@
+{
+  "name": "projeto-globo",
+  "version": "1.0.0",
+  "description": "> É um projeto, proposto pelas mentoras da Globo, para resolver um problema de votação entre participantes de um reality show.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/configs/server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vicckm/projeto-globo.git"
+  },
+  "author": "Brunna Mattos, Samantha Cardoso e Victoria Marques",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vicckm/projeto-globo/issues"
+  },
+  "homepage": "https://github.com/vicckm/projeto-globo#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
