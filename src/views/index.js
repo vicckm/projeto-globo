@@ -9,10 +9,10 @@ const page = `
         <body>
             <form action="/votacao" method="POST">
                 <label for="participanteUm"><img src="../static/img/img1.jpg" alt="Foto do participante 1"></label>
-                <input type="radio" id="participanteUm" name="participante" value="participanteUm">
+                <input type="radio" id="participanteUm" name="participante" value="participante_1">
 
                 <label for="participanteDois"><img src="../static/img/img2.jpeg" alt="Foto do participante 2"></label>
-                <input type="radio" id="participanteDois" name="participante"  value="participanteDois">
+                <input type="radio" id="participanteDois" name="participante"  value="participante_2">
 
                 <button type="submit">Votar</button>
             </form>
