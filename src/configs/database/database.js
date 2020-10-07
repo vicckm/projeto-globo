@@ -6,7 +6,7 @@ const db = new sqlite.Database('./database.sqlite', err =>
 process.on("SIGINT", () => {
     db.close( () => {
         console.log('\n Database closed');
-        process.exit(0);
+        process.exit(0); 
     });
 });
 
