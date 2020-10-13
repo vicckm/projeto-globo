@@ -8,6 +8,6 @@ process.on("SIGINT", () => {
         console.log('\n Database closed');
         process.exit(0); 
     });
-});
+}); 
 
 module.exports = db;

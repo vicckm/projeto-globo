@@ -27,9 +27,25 @@ const TABLE_VOTACAO = `
 
 const INSERT_PARTICIPANTES = `
         INSERT INTO participantes (nome, url_foto)
-        VALUES ('Elsa', 'https://assets.vogue.com/photos/58920113186d7c1b6493ce40/master/pass/frozen-elsa-lesbian-girlfirend.jpg'),
-               ('Penelope Charmosa', 'https://conteudo.imguol.com.br/c/entretenimento/34/2020/03/11/a-personagem-penelope-charmosa-1583932132170_v2_450x600.jpg')
-`
+        VALUES  ('Bob Esponja', 'https://bit.ly/3jKVint'),
+                ('Capitão Gancho', 'https://bit.ly/34Fa6xs'),
+                ('Dexter', 'https://bit.ly/34B1yYG'),
+                ('Docinho', 'https://bit.ly/2SBIELN'),
+                ('Elsa', 'https://bit.ly/3jK4g4l'),
+                ('Fred Flinstone', 'https://bit.ly/2SDyUkc'),
+                ('Johnny Bravo', 'https://bit.ly/30IxmtC'),
+                ('Leitão', 'https://bit.ly/2GKoHjc'),
+                ('Magali', 'https://bit.ly/3jTRMqM'),
+                ('Margarida', 'https://bit.ly/34zpXha'),
+                ('Marge Simpson', 'https://bit.ly/3lwtCU1'),
+                ('Papai Smurf', 'https://bit.ly/2GFRA01'),
+                ('Penelope Charmosa', 'https://bit.ly/3dajHAf'),
+                ('Popeye', 'https://bit.ly/30MHxxc'),
+                ('Ursula', 'https://bit.ly/3dbH6S2'),
+                ('Velma', 'https://bit.ly/36JWWlF')
+                `
+
+
 const INSERT_VOTACAO = `
         INSERT INTO votacao (id_participante_1, votos_participante_1, id_participante_2, votos_participante_2)
         VALUES (1, 0, 2, 0)             
@@ -40,7 +56,7 @@ db.serialize( () => {
 
     db.run(TABLE_VOTACAO, err => { if(err) return exitError(err) });
 
-    // db.run(INSERT_PARTICIPANTES, err => { if(err) return exitError(err) });
+    db.run(INSERT_PARTICIPANTES, err => { if(err) return exitError(err) });
 
-    // db.run(INSERT_VOTACAO, err => { if(err) return exitError(err) });
+    db.run(INSERT_VOTACAO, err => { if(err) return exitError(err) });
 })
