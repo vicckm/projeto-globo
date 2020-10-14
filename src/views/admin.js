@@ -4,7 +4,7 @@ const admin = `
         <head>
             <link rel="stylesheet" href="../static/css/admin.css">
             <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-            <title> Porcentagem - Admin </title>
+            <title> Parcial de Votos </title>
             <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
             <script type="text/javascript">
             google.charts.load("current", {packages:["corechart"]});
@@ -13,7 +13,7 @@ const admin = `
                 var data = google.visualization.arrayToDataTable([
                 ['Participante', 'Número de votos'],
                 ['Bob',     33],
-                ['Capitão',      15],
+                ['Popeye',      15],
                 ]);
 
                 var options = {
@@ -33,16 +33,17 @@ const admin = `
             </script>
         </head>
         <body>
-            <h1 > Resultado Parcial </h1>
+            <h1 class="titulo"> Resultado Parcial </h1>
             <div class="participantes">
-                <div class="participante1">
-                    <img class="part" src="https://bit.ly/3jKVint">
+                <div class="participante1"> 
+                    <img class="personagem" src="https://bit.ly/3jKVint">
                     <p>Bob Esponja</p>
                 </div>
                 <div id="donutchart" style="width: 500px; height: 400px;"></div>
                 <div class="participante2">
-                    <img class="part" src="https://bit.ly/30MHxxc">
+                    <img class="personagem" src="https://bit.ly/30MHxxc">
                     <p>Popeye</p>
+                </div>
                 </div>
             </div>
         </body>
