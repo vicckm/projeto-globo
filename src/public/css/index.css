@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+body {
+    background:#f1f1f1;
+    font-family: 'Bangers', cursive;
+    color:#6bc5d2;
+}
+
+h2 {
+    font-weight: bold;
+    text-align:center; 
+    font-size:50px; 
+    color: #e5487b;
+}
+
+.votacao {
+    width: 100%;
+    display: inline-block;
+    
+}
+
+.votacao .titulo {
+    font-size: 24px;
+    color: #5cb4c2;
+    text-align: center;
+    font-weight: bold;
+}
+.titulo {
+    font-weight: bold;
+}
+
+.legenda {
+    text-align: center;
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+  
+.container .fotoParticipante {
+    display: flex;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    align-items: center;
+  
+}
+
+.participante {
+    display: inline-block;
+    margin: 3%;
+}
+
+.form {
+    display: inline-block;
+    justify-content: space-between;
+    width: 90%;
+}
+  
+.container .checkParticipante {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+}
+
+.fotoParticipante {
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    color: #e5487b;
+    border: 7px solid #fff;
+}
+
+.votarBotao {
+    width: 30%;
+    height: 50px;
+    font-size: 24px;
+    border-radius: 50px;
+}
+  
+.checkParticipante:checked{
+    border: 7px solid #252e4f;
+}
