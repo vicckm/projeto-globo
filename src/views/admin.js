@@ -2,7 +2,7 @@ const admin = `
     <!DOCTYPE html>
     <html lang="pt-br">
         <head>
-            <link type='text/css' href="">
+            <link rel="stylesheet" href="../static/css/admin.css">
             <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
             <title> Porcentagem - Admin </title>
             <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -32,18 +32,18 @@ const admin = `
             }
             </script>
         </head>
-        <body style="background:#d2fafb">
-            <h1 style="text-align:center; font-family:'Bangers',cursive; font-size:50px; color:#6bc5d2;"> Resultado Parcial </h1>
-            <div class="participantes" style="display:flex; justify-content:center">
+        <body>
+            <h1 > Resultado Parcial </h1>
+            <div class="participantes">
                 <div class="participante1">
-                    <img class="part" style="width: 300px; height: 300px; object-fit:cover; border-radius:50%;" src="https://bit.ly/3jKVint">
-                    <p style="text-align:center; font-family:'Bangers',cursive; font-size:20px">Bob Esponja</p>
-                    </div>
+                    <img class="part" src="https://bit.ly/3jKVint">
+                    <p>Bob Esponja</p>
+                </div>
                 <div id="donutchart" style="width: 500px; height: 400px;"></div>
                 <div class="participante2">
-                    <img class="part" style="width: 300px; height: 300px; object-fit:cover; border-radius:50%;" src="https://bit.ly/34Fa6xs">
-                    <p style="text-align:center; font-family:'Bangers',cursive; font-size:20px">Capitão Gancho</p>
-                    </div>
+                    <img class="part" src="https://bit.ly/30MHxxc">
+                    <p>Popeye</p>
+                </div>
             </div>
         </body>
     </html>
