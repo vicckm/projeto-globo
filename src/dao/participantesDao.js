@@ -1,3 +1,5 @@
+const admin = require('../views/admin');
+
 class ParticipantesDao {
   constructor(db) {
     this._db = db;
@@ -13,10 +15,11 @@ class ParticipantesDao {
 
         this._db.run(INSERT, (err) => {
           if (err) {
-            reject("Não foi possível inserir na tabela");
+            console.log(err)
+            reject("Não foi possível inserir na tabela 1");
           }
 
-          resolve("O seu voto foi computado!");
+          resolve(admin);
         });
       } else {
         const INSERT = `
@@ -26,10 +29,10 @@ class ParticipantesDao {
 
         this._db.run(INSERT, (err) => {
           if (err) {
-            reject("Não foi possível inserir na tabela");
+            reject("Não foi possível inserir na tabela 2");
           }
 
-          resolve("O seu voto foi computado!");
+          resolve(admin);
         });
       }
     });

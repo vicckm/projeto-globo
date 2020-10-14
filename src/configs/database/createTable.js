@@ -56,7 +56,7 @@ db.serialize( () => {
 
     db.run(TABLE_VOTACAO, err => { if(err) return exitError(err) });
 
-    db.run(INSERT_PARTICIPANTES, err => { if(err) return exitError(err) });
+    // db.run(INSERT_PARTICIPANTES, err => { if(err) return exitError(err) });
 
-    db.run(INSERT_VOTACAO, err => { if(err) return exitError(err) });
+    // db.run(INSERT_VOTACAO, err => { if(err) return exitError(err) });
 })
