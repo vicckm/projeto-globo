@@ -2,7 +2,7 @@ body {
     background:#d2fafb;
 }
 
-h1 {
+.titulo {
     text-align:center; 
     font-family:'Bangers',cursive; 
     font-size:50px; 
@@ -14,7 +14,7 @@ h1 {
     justify-content:center
 }
 
-.part {
+.personagem {
     width: 300px; 
     height: 300px; 
     object-fit:cover; 
