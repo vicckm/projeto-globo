@@ -1,10 +1,56 @@
-const admin = `
+const admin = (part1, part2) => {
+    return `
     <!DOCTYPE html>
     <html lang="pt-br">
         <head>
-            <link rel="stylesheet" href="../static/css/admin.css">
             <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
             <title> Parcial de Votos </title>
+            <style>
+            body {
+                background:#d2fafb;
+            }
+            
+            .titulo {
+                text-align:center; 
+                font-family:'Bangers',cursive; 
+                font-size:50px; 
+                color:#6bc5d2;
+            }
+            
+            .participantes {
+                display:flex; 
+                justify-content:center
+            }
+            
+            .personagem {
+                width: 300px; 
+                height: 300px; 
+                object-fit:cover; 
+                border-radius:50%;
+            }
+            
+            p {
+                text-align:center; 
+                font-family:'Bangers',cursive; 
+                font-size:20px;
+            }
+            
+            </style>
+        </head>
+        <body>
+            <h1 class="titulo"> Resultado Parcial </h1>
+            <div class="participantes">
+                <div class="participante1"> 
+                    <img class="personagem" src="https://bit.ly/3jKVint">
+                    <p>Bob Esponja</p>
+                </div>
+                <div id="donutchart" style="width: 500px; height: 400px;"></div>
+                <div class="participante2">
+                    <img class="personagem" src="https://bit.ly/30MHxxc">
+                    <p>Popeye</p>
+                </div>
+                </div>
+            </div>
             <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
             <script type="text/javascript">
             google.charts.load("current", {packages:["corechart"]});
@@ -12,8 +58,8 @@ const admin = `
             function drawChart() {
                 var data = google.visualization.arrayToDataTable([
                 ['Participante', 'Número de votos'],
-                ['Bob',     33],
-                ['Popeye',      15],
+                ['Bob',     ${part1}],
+                ['Popeye',  ${part2}],
                 ]);
 
                 var options = {
@@ -31,23 +77,9 @@ const admin = `
                 chart.draw(data, options);
             }
             </script>
-        </head>
-        <body>
-            <h1 class="titulo"> Resultado Parcial </h1>
-            <div class="participantes">
-                <div class="participante1"> 
-                    <img class="personagem" src="https://bit.ly/3jKVint">
-                    <p>Bob Esponja</p>
-                </div>
-                <div id="donutchart" style="width: 500px; height: 400px;"></div>
-                <div class="participante2">
-                    <img class="personagem" src="https://bit.ly/30MHxxc">
-                    <p>Popeye</p>
-                </div>
-                </div>
-            </div>
         </body>
     </html>
-`
+`;
+};
 
 module.exports = admin;

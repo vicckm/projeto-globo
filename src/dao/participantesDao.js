@@ -1,4 +1,4 @@
-const admin = require('../views/admin');
+const paginaResultado = require("../views/admin");
 
 class ParticipantesDao {
   constructor(db) {
@@ -15,11 +15,10 @@ class ParticipantesDao {
 
         this._db.run(INSERT, (err) => {
           if (err) {
-            console.log(err)
             reject("Não foi possível inserir na tabela 1");
           }
 
-          resolve(admin);
+          resolve(paginaResultado);
         });
       } else {
         const INSERT = `
@@ -32,9 +31,25 @@ class ParticipantesDao {
             reject("Não foi possível inserir na tabela 2");
           }
 
-          resolve(admin);
+          resolve(paginaResultado);
         });
       }
+    });
+  }
+
+  computaVotos() {
+    return new Promise((resolve, reject) => {
+      const query = `
+        SELECT SUM(votos_participante_1) AS part1, SUM(votos_participante_2) AS part2 FROM votacao;
+      `;
+
+      this._db.all(query, [], (err, rows) => {
+        if (err) {
+          reject("Não foi possível computar os votos");
+        }
+
+        resolve(rows)
+      });
     });
   }
 }

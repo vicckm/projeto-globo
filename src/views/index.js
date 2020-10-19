@@ -18,7 +18,7 @@ const page = `
             <h1>Quem deve deixar as telinhas?</h1>
         </div>
         <div class="legenda">
-            <p>Vote para passar a borracha e eleminar um desses participantes!</p>
+            <p>Vote para passar a borracha e eliminar um desses participantes!</p>
         </div>
         <div class="container">
 
