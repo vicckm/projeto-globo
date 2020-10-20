@@ -25,7 +25,7 @@ const page = `
             <form action="/votacao" class="form" method="POST">
                 <div class="participante btn-group-toggle">
                     <label for="participanteUm"><img src="https://bit.ly/3jKVint" alt="Foto do participante 1"
-                            class="fotoParticipante rounded-circle img-fluid">
+                            class="fotoParticipante rounded-circle img-fluid" id="participante1" onclick="selectImage(id)">
                         <h2>Bob Esponja</h2>
                     </label>
                     <input type="radio" class="checkParticipante" id="participanteUm" name="participante"
@@ -33,7 +33,7 @@ const page = `
                 </div>
                 <div class="participante btn-group-toggle">
                     <label for="participanteDois"><img src="https://bit.ly/30MHxxc" alt="Foto do participante 2"
-                            class="fotoParticipante rounded-circle img-fluid">
+                            class="fotoParticipante rounded-circle img-fluid" id="participante2" onclick="selectImage(id)">
                         <h2>Popeye</h2>
                     </label>
                     <input type="radio" class="checkParticipante" id="participanteDois" name="participante"
@@ -45,6 +45,17 @@ const page = `
             </form>
         </div>
     </div>
+    <script>
+    function selectImage(id) {
+        if (id == "participante1") {
+            document.querySelector("#participante1").classList.add("checked");
+            document.querySelector("#participante2").classList.remove("checked");
+        } else {
+            document.querySelector("#participante2").classList.add("checked");
+            document.querySelector("#participante1").classList.remove("checked");
+        }
+      }
+    </script>
 </body>
 </html>
 `
