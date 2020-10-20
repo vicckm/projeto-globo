@@ -4,6 +4,7 @@ body {
     background:#f1f1f1;
     font-family: 'Bangers', cursive;
     color:#6bc5d2;
+    padding: 3%;
 }
 
 h2 {
@@ -54,6 +55,14 @@ h2 {
     margin: 3%;
 }
 
+.fotoParticipante {
+    border: 6px solid #fff;
+}
+
+.checked {
+    border: 6px solid #E5487B;
+}  
+
 .form {
     display: inline-block;
     justify-content: space-between;
@@ -61,6 +70,7 @@ h2 {
 }
   
 .container .checkParticipante {
+    display: flex;
     position: absolute;
     top: 0;
     left: 0;
@@ -72,17 +82,18 @@ h2 {
     text-align: center;
     position: relative;
     cursor: pointer;
-    color: #e5487b;
-    border: 7px solid #fff;
+    color: #E5487B;
 }
 
 .votarBotao {
-    width: 30%;
+    width: 20%;
     height: 50px;
     font-size: 24px;
-    border-radius: 50px;
+    transform: skew(-20deg);
+
 }
-  
-.checkParticipante:checked{
-    border: 7px solid #252e4f;
+
+.votarBotao:hover {
+    background-color: #E5487B;
+    border-color: #E5487B;
 }
