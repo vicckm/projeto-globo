@@ -1,7 +1,4 @@
-
-# Votação
-> É um projeto, proposto pelas mentoras da Globo, para resolver um problema de votação entre participantes de um reality show.
-
+# Projeto de Mentoria - Globo
 > Projeto elaborado durante o período de mentoria com o Grupo Globo, cuja proposta era a criação de uma página de votação, com seleção de candidato e leitura de votos. 
 
 ## Colaboradoras 
@@ -9,21 +6,23 @@
  - [Samantha Cardoso](https://github.com/samanthacardosoo)
  - [Victoria Marques](https://github.com/vicckm)
 
- # Status
+## Status
     Projeto Concluído
 
-# Demonstração da Aplicação
- - <https://secret-retreat-81661.herokuapp.com/>
-
-### Pré Requisitos
- - Clone este repositório <http://>
- - Instale as dependências com npm install
- - Execute a aplicação (O servidor iniciará na porta 3000. Acesse <http://localhost:3000>
+### Execute o nosso projeto
+ - Clone este repositório com *$ git clone <https://github.com/vicckm/projeto-globo.git>*
+ - Instale as dependências com *npm install*
+ - Execute a aplicação com *npm start* (O servidor iniciará na porta 3000. Acesse <http://localhost:3000>
 
  ### Tecnologias
- Foram utilizadas as seguintes ferramentas para construção do projeto:
+ Para a construção do projeto, utilizamos:
 
- - HTML6/CSS3
+ - HTML
+ - CSS
  - JavaScript
  - Node.js
- - SQLite
+ 
+ ### Demonstração da Aplicação
+ - <https://secret-retreat-81661.herokuapp.com/>
+ - ![Pagina de votação](https://github.com/vicckm/projeto-globo/blob/master/src/public/img/pag1.jpg)
+ - ![Pagina de resultado parcial](https://github.com/vicckm/projeto-globo/blob/master/src/public/img/pag2.jpg)
