@@ -7,7 +7,7 @@
  - [Victoria Marques](https://github.com/vicckm)
 
 ## Status
-    Projeto Concluído
+    Projeto concluído
 
 ### Execute o nosso projeto
  - Clone este repositório com *$ git clone <https://github.com/vicckm/projeto-globo.git>*
@@ -23,6 +23,8 @@
  - Node.js
  
  ### Demonstração da Aplicação
- - <https://secret-retreat-81661.herokuapp.com/>
- - ![Pagina de votação](https://github.com/vicckm/projeto-globo/blob/master/src/public/img/pag1.jpg)
- - ![Pagina de resultado parcial](https://github.com/vicckm/projeto-globo/blob/master/src/public/img/pag2.jpg)
+ - Veja o projeto no Heroku <https://secret-retreat-81661.herokuapp.com/>
+ - Demonstração:
+ ![Pagina de votação](https://github.com/vicckm/projeto-globo/blob/master/src/public/img/pag1.jpg)
+
+ ![Pagina de resultado parcial](https://github.com/vicckm/projeto-globo/blob/master/src/public/img/pag2.jpg)
