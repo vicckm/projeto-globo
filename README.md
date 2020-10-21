@@ -23,7 +23,7 @@
  - Node.js
  
  ### Demonstração da aplicação
- - Veja o projeto no Heroku: <https://secret-retreat-81661.herokuapp.com/>
+ - Veja o projeto no Heroku: <https://intense-meadow-05756.herokuapp.com/>
  - Demonstração:
  ![Pagina de votação](https://github.com/vicckm/projeto-globo/blob/master/src/public/img/pag1.jpg)
 
