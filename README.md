@@ -9,7 +9,7 @@
 ## Status
     Projeto concluído
 
-### Execute o nosso projeto
+### Execute o projeto
  - Clone este repositório com *$ git clone <https://github.com/vicckm/projeto-globo.git>*
  - Instale as dependências com *npm install*
  - Execute a aplicação com *npm start* (O servidor iniciará na porta 3000. Acesse <http://localhost:3000>
@@ -22,8 +22,8 @@
  - JavaScript
  - Node.js
  
- ### Demonstração da Aplicação
- - Veja o projeto no Heroku <https://secret-retreat-81661.herokuapp.com/>
+ ### Demonstração da aplicação
+ - Veja o projeto no Heroku: <https://secret-retreat-81661.herokuapp.com/>
  - Demonstração:
  ![Pagina de votação](https://github.com/vicckm/projeto-globo/blob/master/src/public/img/pag1.jpg)
 
